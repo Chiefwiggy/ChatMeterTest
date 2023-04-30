@@ -1,0 +1,14 @@
+
+.DataRows {
+    border: 2px solid white;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.RowModule {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}

@@ -1,0 +1,17 @@
+.DataRow {
+
+    display: flex;
+    align-items: center;
+    
+    & span {
+        padding-right: 12px;
+    }
+
+    .faviconImg {
+        height: 32px;
+        width: 32px;
+        padding: 12px;
+        display: block !important;
+    }
+}
+

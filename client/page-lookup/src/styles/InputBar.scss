@@ -1,0 +1,34 @@
+.InputBar {
+    display: flex;
+    flex-direction: column;
+
+    &-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+
+        .MuiFormControl-root {
+        flex-grow: 1;
+        margin-left: 12px;
+        }
+    }
+
+    &-helperText {
+        margin-top: 8px;
+        color: red;
+        font-size: 0.75rem;
+    }
+}
+
+  .SelectDropdown {
+    margin-top: 8px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    min-width: 8%;
+  }
+
+  .MuiFormControl-root {
+    margin-left: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }

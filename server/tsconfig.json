@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES5",
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/**/*.ts"
+, "src/tests/index.test.ts"  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
+}
