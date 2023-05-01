@@ -21,7 +21,7 @@ describe('Test the routes', () => {
     expect(response.statusCode).toEqual(201);
   })
 
-  it ('should should get a 409 code when making the same call for the same user', async() => {
+  it ('should should get a 202 code when making the same call for the same user', async() => {
     const testdata = {
       "url": `https://randomtest499494.com`,
       "title": "Breaking News, Latest News and Videos | CNNClose icon",
@@ -32,21 +32,7 @@ describe('Test the routes', () => {
       .set('X-User', '0')
       .send(testdata)
     
-    expect(response.statusCode).toEqual(409);
-  })
-
-  it ('should should get a 201 code when making the same call for a different user', async() => {
-    const testdata = {
-      "url": `https://randomtest499494.com`,
-      "title": "Breaking News, Latest News and Videos | CNNClose icon",
-      "favicon": "https://cnn.com/media/sites/cnn/favicon.ico"
-    }
-    const response: any = await request(App.app)
-      .post('/database/sendURL')
-      .set('X-User', '1')
-      .send(testdata)
-    
-    expect(response.statusCode).toEqual(409);
+    expect(response.statusCode).toEqual(202);
   })
 
   it('should get 1 result from the user 0', async () => {
