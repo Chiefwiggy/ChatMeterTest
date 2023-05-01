@@ -19,7 +19,7 @@ app.use("/database", dbRouter);
 app.use('/url', urlRouter);
 
 
-mongoose.connect("mongodb+srv://chatmeter:0ST0Kc6I0MXndRrp@collinkruegerdatabase.lkqn1.mongodb.net/chatmeter?retryWrites=true&w=majority");
+mongoose.connect(process.env.MONGO_URL ?? '');
 
 const server = app.listen(PORT, () => {
     console.log(`Server's up on PORT ${PORT}!`);
